@@ -1027,3 +1027,10 @@ require('lazy').setup({
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+--[[
+  NOTE While learning disable the arrow keys
+--]]
+vim.api.nvim_set_keymap('', '<Up>', '<Nop>', { noremap = true })
+vim.api.nvim_set_keymap('', '<Down>', '<Nop>', { noremap = true })
+vim.api.nvim_set_keymap('', '<Left>', '<Nop>', { noremap = true })
+vim.api.nvim_set_keymap('', '<Right>', '<Nop>', { noremap = true })
